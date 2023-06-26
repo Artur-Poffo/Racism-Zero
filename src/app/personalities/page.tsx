@@ -2,7 +2,7 @@ import { TitleSection } from '@/components/TitleSection'
 import { hygraph } from '@/lib/hygraph'
 
 export default async function Personalities() {
-  const { personalities } = await hygraph.request(
+  const personalities = await hygraph.request(
     `
       {
         personalities {
