@@ -2,18 +2,20 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { LiHTMLAttributes } from 'react'
 
-interface NavLinkProps {
+interface NavLinkProps extends LiHTMLAttributes<HTMLLIElement> {
   name: string
   to: string
 }
 
-export function NavLink({ name, to }: NavLinkProps) {
+export function NavLink({ name, to, ...rest }: NavLinkProps) {
   const path = usePathname()
   const isLinkActivate = path === to
 
   return (
     <li
+      {...rest}
       className={`${
         isLinkActivate
           ? 'opacity-100 underline underline-offset-4'

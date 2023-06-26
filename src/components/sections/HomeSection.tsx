@@ -5,7 +5,7 @@ export function HomeSection() {
   return (
     <section id="home">
       <div className="w-full h-screen flex items-center justify-center relative">
-        <div className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-2 text-center">
           <h1 className="text-6xl font-bold font-serif">Racismo Zero</h1>
           <span className="font-serif text-lg max-w-md text-center underline underline-offset-4 decoration-yellow-400">
             Um projeto com o intuito de espalhar a história de algumas
