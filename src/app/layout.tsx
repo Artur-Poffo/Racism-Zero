@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="pt">
       <body className="bg-zinc-900 text-zinc-200 scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-zinc-900">
         <Navbar />
-        <main className="pb-10">{children}</main>
+        <main className="pb-10 px-5">{children}</main>
       </body>
     </html>
   )
