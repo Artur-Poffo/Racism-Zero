@@ -42,7 +42,7 @@ export default async function Personality({
       {personality ? (
         <article className="flex flex-col gap-40">
           <header className="h-[30vh] w-full bg-indigo-800 rounded-lg flex flex-col items-center justify-end">
-            <div className="flex flex-col items-center justify-center gap-5 -mb-[120px]">
+            <div className="flex flex-col items-center justify-center gap-5 -mb-[120px] text-center">
               <Image
                 src={personality.image.url}
                 width={200}
