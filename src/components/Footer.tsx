@@ -7,7 +7,7 @@ export function Footer() {
         className="opacity-60 hover:opacity-100 transition-opacity"
         href={'https://github.com/Artur-Poffo/racismo-zero'}
       >
-        Source Code
+        Source Code on GitHub
       </Link>
     </footer>
   )

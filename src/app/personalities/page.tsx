@@ -8,6 +8,8 @@ interface PersonalityArrayData {
   image: { url: string }
 }
 
+export const revalidate = 60 * 60 // 1 hour
+
 export default async function Personalities() {
   const { personalities }: { personalities: PersonalityArrayData[] } =
     await hygraph.request(
@@ -28,7 +30,7 @@ export default async function Personalities() {
     <div className="py-20">
       <TitleSection text="Personalidades" />
 
-      <div className="max-w-6xl mx-auto flex justify-center flex-wrap gap-15 my-10">
+      <div className="max-w-6xl mx-auto flex justify-center flex-wrap gap-8 my-10">
         {personalities.map(({ image, name, slug }, _) => {
           return (
             <PersonalityCard

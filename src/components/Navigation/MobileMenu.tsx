@@ -11,7 +11,7 @@ export function MobileMenu() {
     <>
       <div
         onClick={() => setIsOpenMenu((state) => !state)}
-        className="fixed top-6 right-6 w-8 h-8 bg-zinc-950 lg:hidden z-50 rounded-sm flex flex-col items-center justify-center gap-1 cursor-pointer"
+        className="fixed top-6 right-6 w-10 h-10 bg-zinc-950 lg:hidden z-50 rounded-sm flex flex-col items-center justify-center gap-[5px] cursor-pointer"
       >
         <div className="w-4/5 h-[2px] bg-zinc-300" />
         <div className="w-4/5 h-[2px] bg-zinc-300" />
