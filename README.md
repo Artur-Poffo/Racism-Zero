@@ -53,7 +53,7 @@ Racism Zero - School project of the subject of the trail of digital technologies
 ### Pre-requisites
 
 Before you begin, you will need to have the following tools installed on your machine:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) and the [pnpm](https://pnpm.io) package manager.
 
 In addition, it is good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/).
 
@@ -69,10 +69,10 @@ $ git clone https://github.com/Artur-Poffo/Racism-Zero.git
 $ cd Racism-Zero
 
 # install the dependencies
-$ npm install
+$ pnpm install
 
 # Run the application in development mode
-$ npm run dev
+$ pnpm dev
 
 # The server will start at port: 3333 - go to http://localhost:3333
 ```
